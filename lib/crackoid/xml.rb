@@ -184,7 +184,7 @@ class REXMLUtilityNode #:nodoc:
   end
 end
 
-module Crack
+module Crackoid
   class XML
     def self.parse(xml)
       stack = []
