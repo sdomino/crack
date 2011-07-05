@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{crack}
-  s.version = "0.1.8"
+  s.name = %q{crackoid}
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["John Nunemaker", "Wynn Netherland"]
-  s.date = %q{2010-07-07}
-  s.email = %q{nunemaker@gmail.com}
+  s.authors = ["sdomino"]
+  s.date = %q{2011-07-05}
+  s.email = %q{sdomino@pagodabox.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -21,11 +21,11 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "crack.gemspec",
-     "lib/crack.rb",
-     "lib/crack/core_extensions.rb",
-     "lib/crack/json.rb",
-     "lib/crack/xml.rb",
+     "crackoid.gemspec",
+     "lib/crackoid.rb",
+     "lib/crackoid/core_extensions.rb",
+     "lib/crackoid/json.rb",
+     "lib/crackoid/xml.rb",
      "test/crack_test.rb",
      "test/data/twittersearch-firefox.json",
      "test/data/twittersearch-ie.json",
@@ -35,12 +35,12 @@ Gem::Specification.new do |s|
      "test/test_helper.rb",
      "test/xml_test.rb"
   ]
-  s.homepage = %q{http://github.com/jnunemaker/crack}
+  s.homepage = %q{http://github.com/sdomino/crack}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{crack}
+  s.rubyforge_project = %q{crackoid}
   s.rubygems_version = %q{1.3.6}
-  s.summary = %q{Really simple JSON and XML parsing, ripped from Merb and Rails.}
+  s.summary = %q{This gem is jnunemaker's 'Crack', with a fix so that XML parsing now works with mongoid!}
   s.test_files = [
     "test/crack_test.rb",
      "test/hash_test.rb",

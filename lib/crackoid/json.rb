@@ -6,7 +6,7 @@
 require 'yaml'
 require 'strscan'
 
-module Crack
+module Crackoid
   class JSON
     def self.parse(json)
       YAML.load(unescape(convert_json_to_yaml(json)))
@@ -18,7 +18,7 @@ module Crack
       def self.unescape(str)
         str.gsub(/\\u([0-9a-f]{4})/) { [$1.hex].pack("U") }
       end
-      
+
       # matches YAML-formatted dates
       DATE_REGEX = /^\d{4}-\d{2}-\d{2}$|^\d{4}-\d{1,2}-\d{1,2}[T \t]+\d{1,2}:\d{2}:\d{2}(\.[0-9]*)?(([ \t]*)Z|[-+]\d{2}?(:\d{2})?)?$/
 
@@ -45,7 +45,7 @@ module Crack
             marks << scanner.pos - 1 unless quoting
           when "\\"
             scanner.skip(/\\/)
-          end          
+          end
         end
 
         if marks.empty?
